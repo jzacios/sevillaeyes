@@ -22,3 +22,8 @@ body {
     font-family: $fontFamily;
     color: $fontColor;
 }
+
+a {
+    color: $fontColor;
+    text-decoration: none;
+}

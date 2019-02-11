@@ -17,4 +17,9 @@ body {
   font-family: "Montserrat";
   color: #fff;
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
 /*# sourceMappingURL=var.css.map */

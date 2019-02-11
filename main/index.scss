@@ -1,25 +1,27 @@
 /* Mixins */
 
-@mixin background-tint($tint_color, $image_url) {
-    background-image: 
-      linear-gradient( $tint_color, $tint_color ),
-      url( $image_url )
-}
+    // background tint function
+    @mixin background-tint($tint_color, $image_url) {
+        background-image: 
+        linear-gradient( $tint_color, $tint_color ),
+        url( $image_url )
+    }
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    // center flex
+    @mixin flex-center { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 /* Global Variables */
 
-$tint-color: rgba(0,0,0,.5);
-$main-bg: "../images/main-background.jpg";
+    $tint-color: rgba(0,0,0,.5);
+    $main-bg: "../images/main-background.jpg";
 
 /* Local Variables */
 
-    // headings
+    /* headings */
 
     $hSize: 3.5rem;
     $hFont: "Pacifico";
@@ -29,7 +31,7 @@ $main-bg: "../images/main-background.jpg";
     $lColor: #eaeaea; // lighter heading color
     $lShadow: #555; // lighter heading text-shadow
 
-    // desc
+    /* desc */
 
     $dFont: "Indie Flower";
     $dSize: 1.5rem;
@@ -62,12 +64,25 @@ body {
     background-size: cover;
 }
 
+.navbar {
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 40px;
+}
+
 .slide-1 {                                                                           // slide-1
     height: 100vh;
     padding: 1em;
 
     @include flex-center();
     flex-direction: column;
+
+    position: relative;
+
+    .navbar {
+
+    }
 
     .desc {
         text-align: center;
