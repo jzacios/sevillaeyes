@@ -1,0 +1,53 @@
+/* Mixins */
+/* Global Variables */
+/* Local Variables */
+/* Styles */
+.title {
+  font-size: 3.5rem;
+  font-family: "Pacifico";
+  font-weight: 300;
+  color: #008cff;
+  text-shadow: 2px 2px #004a86;
+}
+
+.title-light {
+  color: #eaeaea;
+  text-shadow: 2px 2px #555;
+}
+
+.desc {
+  font-family: "Indie Flower";
+  font-size: 1.5rem;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/main-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/main-background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-1 {
+  height: 100vh;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-1 .desc {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

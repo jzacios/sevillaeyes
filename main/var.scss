@@ -1,0 +1,24 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat|Pacifico');
+
+/* Global Variables */
+
+$fontFamily: "Montserrat";
+$fontColor: #fff;
+
+/* Styles */
+
+*, *::before, *::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: $fontFamily;
+    color: $fontColor;
+}

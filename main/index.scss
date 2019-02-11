@@ -1,0 +1,75 @@
+/* Mixins */
+
+@mixin background-tint($tint_color, $image_url) {
+    background-image: 
+      linear-gradient( $tint_color, $tint_color ),
+      url( $image_url )
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global Variables */
+
+$tint-color: rgba(0,0,0,.5);
+$main-bg: "../images/main-background.jpg";
+
+/* Local Variables */
+
+    // headings
+
+    $hSize: 3.5rem;
+    $hFont: "Pacifico";
+
+    $hColor: #008cff; // standard heading color
+    $hShadow: #004a86; // standard heading text-shadow
+    $lColor: #eaeaea; // lighter heading color
+    $lShadow: #555; // lighter heading text-shadow
+
+    // desc
+
+    $dFont: "Indie Flower";
+    $dSize: 1.5rem;
+
+/* Styles */
+
+.title {
+    font-size: $hSize;
+    font-family: $hFont;
+    font-weight: 300;
+    color: $hColor;
+    text-shadow: 2px 2px $hShadow;
+}
+
+.title-light {
+    color: $lColor;
+    text-shadow: 2px 2px $lShadow;
+}
+
+.desc {
+    font-family: $dFont;
+    font-size: $dSize;
+}
+
+body {
+    @include background-tint($tint-color, $main-bg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-1 {                                                                           // slide-1
+    height: 100vh;
+    padding: 1em;
+
+    @include flex-center();
+    flex-direction: column;
+
+    .desc {
+        text-align: center;
+    }
+}
