@@ -16,9 +16,9 @@
     </head>
     <body>
         <nav class="navbar">
-            <a href="#" class="option"><i class="far fa-user"></i></a>
-            <a href="#" class="option"><i class="far fa-user"></i></a>
-            <a href="#" class="option"><i class="far fa-user"></i></a>
+            <a href="#" class="option"><i class="fas fa-user"></i></a>
+            <a href="#" class="option"><i class="fas fa-user"></i></a>
+            <a href="#" class="option"><i class="fas fa-user"></i></a>
         </nav>
         <section class="slide-1">
             <h1 class="title">Sevilla<span class="title-light">Eyes</span></h1>
