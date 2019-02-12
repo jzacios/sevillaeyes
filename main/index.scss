@@ -82,7 +82,7 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
 
-        // display: none;
+        display: none;
     }
 
     .option {
@@ -91,7 +91,6 @@ body {
         padding: .5em;
 
         // max-height: 80px;
-        
     
         @include transition();
     }
@@ -103,8 +102,8 @@ body {
     .scroll-down {
         width: 100%;
         background-color: rgba(0,0,0,.5);
-        right: 0; bottom: 0; left: 0;  
         height: 30px;
+        display: none;
 
         @include flex-center();
         
@@ -115,7 +114,13 @@ body {
     }
 
     .scroll-up {
-        display: none;
+        width: 100%;
+        background-color: rgba(0,0,0,.5);
+        height: 30px;
+
+        @include flex-center();
+        
+        cursor: pointer; 
     }
 }
 

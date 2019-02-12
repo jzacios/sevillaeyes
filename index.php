@@ -34,11 +34,17 @@
 
         </section>
         <script>
+            $("#scroll-up").hide();
             $(document).ready(function() {
                 $("#scroll-down").click(function() {
-                    $("#options").css("display", "hidden");
-                    $("#scroll-down").css("display", "hidden");
-
+                    $("#scroll-down").hide();
+                    $("#options").css("display", "grid");
+                    $("#scroll-up").show();
+                });
+                $("#scroll-up").click(function() {
+                    $("#scroll-up").hide();
+                    $("#options").css("display", "none");
+                    $("#scroll-down").show();
                 });
             });
         </script>
